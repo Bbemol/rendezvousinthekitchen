@@ -8,6 +8,10 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['necto_monoregular', 'sans-serif'],
+        serif: ['cantata_oneregular', 'serif']
+      },
     },
   },
   variants: {},
