@@ -26,6 +26,26 @@
     @apply text-4xl leading-normal tracking-wide;
   }
 
+  .menu--item {
+    @apply relative list-none font-serif text-4xl leading-normal tracking-wide lowercase;
+  }
+
+  .menu--link {
+    padding: 0 24px;
+    @apply bg-gray-200 px-6;
+    z-index: 20;
+    position: relative;
+  }
+
+  .menu--activeline {
+    @apply hidden absolute
+      inset-y-1/2 right-0
+      mr-6
+      w-full
+      h-px
+      bg-black;
+  }
+
   .hamburger {
     padding: 15px 15px;
     display: inline-block;
@@ -112,11 +132,11 @@
   .hamburger--squeeze.is-active .hamburger-inner::after {
     bottom: 0;
     transform: rotate(-90deg);
-    transition: bottom 0.075s ease
-      transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: bottom 0.075s ease transform 0.075s 0.12s
+      cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
   .menu.is-active {
-    @apply h-full opacity-100 transition-opacity;
+    @apply h-full opacity-100 transition;
   }
 }
