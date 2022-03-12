@@ -2,6 +2,21 @@
 layout: base.njk
 ---
 {% include "header.njk" %}
-<h1>{{title}}</h1>
+<div class="py-12 px-6">
+  <h1 class="pr-12 mt-8 mb-2 leading-tight">{{title}}</h1>
+  <div class="opacity-50 text-base mb-8 tracking-widest">
+    publié le {{page.date.toLocaleDateString()}}
+  </div>
+  {% include "components/separator.njk" %}
+  {{description | safe}}
+  <ul class="mt-8">
+    {%- for ingredient in ingredients -%}
+    <li>
+      {{ingredient | safe}}
+    </li>
+    {%- endfor -%}
+  </ul>
 
-{{content | safe}}
+  {{content | safe}}
+</div>
+

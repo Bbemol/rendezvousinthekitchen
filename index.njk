@@ -18,7 +18,7 @@ title: rendez-vous in the kitchen
             <div class="text-lg text-stone-700">{{recette.data.title}}</div>
             <div class="opacity-50 text-base mb-8 tracking-widest">{{recette.date.toLocaleDateString()}}</div>
           </a>
-          <div class="h-0.5 bg-stone-900 w-12"></div>
+          {% include "components/separator.njk" %}
         </div>
       {%- endfor -%}
   </div>
