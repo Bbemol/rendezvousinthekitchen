@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply bg-stone-100 text-stone-900;
+  }
   @font-face {
     font-family: "cantata_oneregular";
     src: url("assets/fonts/cantataone-regular-webfont.woff2") format("woff2"),
@@ -32,7 +35,7 @@
 
   .menu--link {
     padding: 0 24px;
-    @apply bg-gray-200 px-6;
+    @apply bg-stone-200 px-6;
     z-index: 20;
     position: relative;
   }
@@ -43,7 +46,7 @@
       mr-6
       w-full
       h-px
-      bg-black;
+      bg-stone-900;
   }
 
   .hamburger {
@@ -70,7 +73,7 @@
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #000;
+    @apply bg-stone-900;
   }
 
   .hamburger-box {
@@ -90,7 +93,7 @@
   .hamburger-inner::after {
     width: 44px;
     height: 2px;
-    background-color: #000;
+    @apply bg-stone-900;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;

@@ -1,11 +1,6 @@
 module.exports = {
   mode: 'jit',
-  purge: {
-    content: ['_site/**/*.html', '*.js'],
-    options: {
-      safelist: [],
-    },
-  },
+  content: ['_site/**/*.html', '*.js'],
   theme: {
     extend: {
       fontFamily: {
@@ -14,6 +9,5 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [],
 }
