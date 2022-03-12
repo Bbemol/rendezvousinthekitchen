@@ -33,14 +33,14 @@
   }
 
   .menu--item {
-    @apply relative text-stone-400 list-none font-serif text-4xl leading-normal tracking-wide lowercase;
+    @apply relative text-stone-500 list-none font-serif text-4xl leading-normal tracking-wide lowercase;
   }
   
   .menu--link {
-    @apply bg-stone-100 inline-block z-20 relative;
+    @apply inline-block z-20 relative;
   }
   .menu--text {
-    @apply transition-transform duration-300 ease-menu -translate-x-full px-8;
+    @apply transition-transform duration-300 ease-menu -translate-x-full bg-stone-100 px-8;
   }
 
   .is-active .menu--text {
@@ -48,12 +48,14 @@
   }
 
   .menu--activeline {
-    @apply hidden absolute
+    @apply absolute
       inset-y-1/2 right-0
       mr-6
       w-full
       h-px
-      bg-stone-900;
+      opacity-0
+      bg-stone-900
+      transition-opacity;
   }
   .menu {
     @apply -translate-x-full transition-transform duration-300 ease-menu;
