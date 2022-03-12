@@ -5,13 +5,22 @@ title: rendez-vous in the kitchen
 
 {% include "header.njk" %}
 
-<div class="absolute z-20 top-[25px] right-[17px]">
-  <button class="hamburger hamburger--squeeze" type="button">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
-</div>
+<div class="py-12 px-6">
+  <h1 class="max-w-[320px] my-8">Rendez-vous in the kitchen</h1>
 
-<h1 class="max-w-[320px] mt-8">Rendez-vous in the kitchen</h1>
+  <h2>Nos dernières recettes</h2>
+
+  <div class="mt-8">
+      {%- for recette in collections.recette | head(-4) | reverse -%}
+        <div class="mb-8">
+          <a href="{{recette.url}}" class="block">
+            <div class="mb-4"><img src="{{recette.data.image}}" alt=""></div>
+            <div class="text-lg text-stone-700">{{recette.data.title}}</div>
+            <div class="opacity-50 text-base mb-8 tracking-widest">{{recette.date.toLocaleDateString()}}</div>
+          </a>
+          <div class="h-0.5 bg-stone-900 w-12"></div>
+        </div>
+      {%- endfor -%}
+  </div>
+</div>
 

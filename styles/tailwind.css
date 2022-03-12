@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    @apply bg-stone-100 text-stone-900;
+    @apply bg-stone-100 text-stone-900 font-mono;
   }
   @font-face {
     font-family: "cantata_oneregular";
@@ -25,20 +25,25 @@
   h1 {
     @apply font-serif;
     @apply lowercase;
-    @apply py-12 px-6;
     @apply text-4xl leading-normal tracking-wide;
   }
 
+  h2 {
+    @apply text-xl leading-normal tracking-wide underline underline-offset-4 text-stone-800;
+  }
+
   .menu--item {
-    @apply relative list-none font-serif text-4xl leading-normal tracking-wide lowercase;
+    @apply relative text-stone-400 list-none font-serif text-4xl leading-normal tracking-wide lowercase;
   }
   
   .menu--link {
-    @apply bg-stone-200 inline-block z-20 relative px-8;
-    @apply transition-transform duration-300 ease-menu -translate-x-full;
+    @apply bg-stone-100 inline-block z-20 relative;
+  }
+  .menu--text {
+    @apply transition-transform duration-300 ease-menu -translate-x-full px-8;
   }
 
-  .is-active .menu--link{
+  .is-active .menu--text {
     @apply transition-transform duration-300 ease-menu translate-x-0;
   }
 
