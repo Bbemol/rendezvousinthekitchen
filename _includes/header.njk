@@ -1,6 +1,6 @@
-<div class="menu absolute top-0 left-0 w-full h-full overflow-hidden z-10 bg-stone-100 shadow-xl">
+<div class="menu fixed top-0 left-0 w-full h-full overflow-hidden z-20 bg-stone-100 shadow-xl">
   <nav class="mt-24">
-    <li class="menu--item group {% if page.url == '/'%}text-stone-800 uppercase{% endif %}">
+    <li class="menu--item group {% if page.url == '/'%}text-stone-600{% endif %}">
       <a href="/" class="menu--link block">
         <span class="menu--text inline-block delay-150">Accueil</span>
       </a>
@@ -28,8 +28,14 @@
     </li>
   </nav>
 </div>
-
-<div class="absolute z-20 top-[25px] right-[17px]">
+<div class="bg-white fixed w-full flex justify-between top-0 items-center z-10">
+  {% if page.url != '/'%}
+    <a class="block text-xl max-w-[220px] tracking-wide p-4" href="/">
+      rendez-vous in&nbsp;the kitchen
+    </a>
+  {% endif %}
+</div>
+<div class="z-30 fixed top-[18px] right-[6px]">
   <button class="hamburger hamburger--squeeze" type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>

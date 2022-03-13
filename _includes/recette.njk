@@ -1,22 +1,38 @@
 ---
 layout: base.njk
 ---
-{% include "header.njk" %}
-<div class="py-12 px-6">
-  <h1 class="pr-12 mt-8 mb-2 leading-tight">{{title}}</h1>
-  <div class="opacity-50 text-base mb-8 tracking-widest">
-    publié le {{page.date.toLocaleDateString()}}
+
+<div class="recette">
+  {% include "header.njk" %}
+  <div class="relative mt-20">
+    <img src="{{image}}" class="max-h-48 w-full object-cover" alt="">
   </div>
-  {% include "components/separator.njk" %}
-  {{description | safe}}
-  <ul class="mt-8">
-    {%- for ingredient in ingredients -%}
-    <li>
-      {{ingredient | safe}}
-    </li>
-    {%- endfor -%}
-  </ul>
-
-  {{content | safe}}
+  <div class="pb-12">
+    <div class="px-6">
+      <h1 class="pr-12 mt-8 mb-2 leading-tight">{{title}}</h1>
+      <div class="opacity-50 text-base mb-8 tracking-widest">
+        publié le {{page.date.toLocaleDateString()}}
+      </div>
+      {% include "components/separator.njk" %}
+      <div class="my-8">
+        {{description | safe}}
+      </div>
+    </div>
+    <div class="flex">
+      <div class="recette--tab is-active js-ingredients-tab">ingrédients</div>
+      <div class="recette--tab js-preparation-tab">préparation</div>
+    </div>
+    <div class="js-ingredients">
+      <ul class="mt-8 mx-6">
+        {%- for ingredient in ingredients -%}
+        <li>
+          - {{ingredient | safe}}
+        </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    <div class="js-preparation pt-8 px-6 hidden">
+      {{content | safe}}
+    </div>
+  </div>
 </div>
-

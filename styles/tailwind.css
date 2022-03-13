@@ -33,7 +33,7 @@
   }
 
   .menu--item {
-    @apply relative text-stone-500 list-none font-serif text-4xl leading-normal tracking-wide lowercase;
+    @apply relative text-stone-900 list-none font-serif text-4xl leading-normal tracking-wide lowercase;
   }
   
   .menu--link {
@@ -67,6 +67,27 @@
 }
 
 @layer components {
+  .recette--tab {
+    @apply text-stone-900 w-1/2 text-lg text-center py-4 tracking-widest border-b-[1px] border-black;
+  }
+
+  .recette--tab.is-active {
+    @apply bg-stone-900 text-white;
+  }
+
+  .recette ol {
+    counter-reset: etapes-counter;
+  }
+
+  .recette ol li {
+    counter-increment: etapes-counter;
+  }
+
+  .recette ol li:before {
+    content: "Étape " counter(etapes-counter);
+    @apply underline mt-4 mb-2 block;
+  }
+
   .hamburger {
     padding: 15px 15px;
     display: inline-block;
@@ -130,42 +151,6 @@
     bottom: -10px;
   }
 
-  .hamburger--squeeze {
-    .hamburger-inner {
-      transition-duration: 0.075s;
-      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-
-      &::before {
-        transition: top 0.075s 0.12s ease, opacity 0.075s ease;
-      }
-
-      &::after {
-        transition: bottom 0.075s 0.12s ease,
-          transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
-      }
-    }
-
-    &.is-active {
-      .hamburger-inner {
-        transform: rotate(45deg);
-        transition-delay: 0.12s;
-        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-
-        &::before {
-          top: 0;
-          opacity: 0;
-          transition: top 0.075s ease, opacity 0.075s 0.12s ease;
-        }
-
-        &::after {
-          bottom: 0;
-          transform: rotate(-90deg);
-          transition: bottom 0.075s ease,
-            transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-        }
-      }
-    }
-  }
   .hamburger--squeeze .hamburger-inner {
     transition-duration: 0.075s;
     transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
