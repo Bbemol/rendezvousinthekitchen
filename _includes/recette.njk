@@ -2,7 +2,7 @@
 layout: base.njk
 ---
 
-<div class="recette">
+<div class="recette mb-16">
   {% include "header.njk" %}
   <div class="relative mt-20">
     <img src="{{image}}" class="max-h-48 w-full object-cover" alt="">
@@ -35,4 +35,21 @@ layout: base.njk
       {{content | safe}}
     </div>
   </div>
+  {%- if related_links.length > 0 -%}
+  <div class="mx-6">
+    <h3 class="mb-6 underline">Que faire avec les restes ?</h3>
+    <div class="grid grid-cols-2 gap-4">
+      {%- for recette in collections.recette -%}
+        {%- for link in related_links -%}
+          {%- if link == recette.url -%}
+            <div>
+              <img src="{{recette.data.image}}" alt="" class="max-h-32 w-full object-cover mb-4">
+              <a href="{{recette.url}}">{{recette.data.title}}</a>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
 </div>
