@@ -1,0 +1,12 @@
+{%- for recette in collections.recette | head(-4) | reverse -%}
+  <div class="mb-8">
+    <a href="{{recette.url}}" class="block">
+      <div class="mb-4">
+        <img src="{{recette.data.image}}" class="max-h-48 md:max-h-96 object-cover w-full" alt="">
+      </div>
+      <div class="text-lg text-stone-700">{{recette.data.title}}</div>
+      <div class="opacity-50 text-base mb-8 tracking-widest">{{recette.date.toLocaleDateString()}}</div>
+    </a>
+    {% include "components/separator.njk" %}
+  </div>
+{%- endfor -%}

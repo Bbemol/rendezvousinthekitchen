@@ -2,10 +2,10 @@
 layout: base.njk
 ---
 
-<div class="recette mb-16">
-  {% include "header.njk" %}
-  <div class="relative mt-20">
-    <img src="{{image}}" class="max-h-48 w-full object-cover" alt="">
+{% include "header.njk" %}
+<div class="recette mb-16 md:max-w-[700px] mx-auto">
+  <div class="relative mt-[5.5rem] md:mt-32">
+    <img src="{{image}}" class="max-h-48 md:max-h-96 w-full object-cover" alt="">
   </div>
   <div class="pb-12 overflow-hidden">
     <div class="px-6">

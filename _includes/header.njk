@@ -1,25 +1,25 @@
 <div class="menu fixed top-0 left-0 w-full h-full overflow-hidden z-20 bg-stone-100 shadow-xl">
   <nav class="mt-24">
-    <li class="menu--item group {% if page.url == '/'%}text-stone-600{% endif %}">
+    <li class="menu--item group hover:text-stone-400">
       <a href="/" class="menu--link block">
         <span class="menu--text inline-block delay-150">Accueil</span>
       </a>
-      <div class="menu--activeline group-hover:opacity-100"></div>
+      <div class="menu--activeline group-hover:bg-stone-400 {% if page.url == '/'%}opacity-100{% endif %}"></div>
     </li>
-    <li class="menu--item group">
-      <a href="/" class="menu--link block">
+    <li class="menu--item group hover:text-stone-400">
+      <a href="/recettes" class="menu--link block">
         <span class="menu--text inline-block delay-200">Recettes</span>
       </a>
-      <div class="menu--activeline group-hover:opacity-100"></div>
+      <div class="menu--activeline group-hover:bg-stone-400 {% if page.url.includes('/recettes') %}opacity-100{% endif %}"></div>
     </li>
-    <li class="menu--item group">
+    <li class="menu--item group hover:text-stone-400">
       <a href="/" class="menu--link block">
         <span class="menu--text inline-block delay-300">Nous</span>
       </a>
-      <div class="menu--activeline group-hover:opacity-100"></div>
+      <div class="menu--activeline"></div>
 
     </li>
-    <li class="menu--item group">
+    <li class="menu--item hover:text-stone-400">
       <a href="/" class="menu--link block">
         <span class="menu--text inline-block delay-[400ms]">Contact</span>
       </a>
@@ -28,7 +28,7 @@
     </li>
   </nav>
 </div>
-<div class="bg-white fixed w-full flex justify-between top-0 items-center z-10">
+<div class="bg-white opacity-90 fixed w-full flex justify-between top-0 items-center z-10">
   {% if page.url != '/'%}
     <a class="block text-xl max-w-[220px] tracking-wide p-4 font-serif" href="/">
       rendez-vous in&nbsp;the kitchen
