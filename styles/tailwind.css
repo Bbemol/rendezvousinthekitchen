@@ -88,6 +88,21 @@
     @apply underline mt-4 mb-2 block;
   }
 
+  .js-preparation {
+    @apply translate-x-full max-h-0 transition-all duration-300 ease-menu;
+  }
+  
+  .js-preparation.is-active {
+    @apply translate-x-0 max-h-fit transition-all duration-300 ease-menu;
+  }
+  
+  .js-ingredients {
+    @apply -translate-x-full max-h-0 transition-all duration-300 ease-menu;
+  }
+  .js-ingredients.is-active {
+    @apply translate-x-0 max-h-fit transition-all duration-300 ease-menu;
+  }
+
   .hamburger {
     padding: 15px 15px;
     display: inline-block;

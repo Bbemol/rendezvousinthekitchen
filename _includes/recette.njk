@@ -7,7 +7,7 @@ layout: base.njk
   <div class="relative mt-20">
     <img src="{{image}}" class="max-h-48 w-full object-cover" alt="">
   </div>
-  <div class="pb-12">
+  <div class="pb-12 overflow-hidden">
     <div class="px-6">
       <h1 class="pr-12 mt-8 mb-2 leading-tight">{{title}}</h1>
       <div class="opacity-50 text-base mb-8 tracking-widest">
@@ -22,7 +22,7 @@ layout: base.njk
       <div class="recette--tab is-active js-ingredients-tab">ingrédients</div>
       <div class="recette--tab js-preparation-tab">préparation</div>
     </div>
-    <div class="js-ingredients">
+    <div class="js-ingredients is-active">
       <ul class="mt-8 mx-6">
         {%- for ingredient in ingredients -%}
         <li>
@@ -31,7 +31,7 @@ layout: base.njk
         {%- endfor -%}
       </ul>
     </div>
-    <div class="js-preparation pt-8 px-6 hidden">
+    <div class="js-preparation px-6">
       {{content | safe}}
     </div>
   </div>
