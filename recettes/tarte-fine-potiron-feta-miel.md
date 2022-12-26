@@ -1,6 +1,6 @@
 ---
 tags: recette
-title: Patates douces rôties, sauce tomate et feta
+title: Tarte fine au potiron et chèvre miel
 layout: recette.njk
 image: /assets/recettes/tarte-fine-potiron-chevre-miel.jpeg
 ingredients:

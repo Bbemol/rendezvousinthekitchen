@@ -1,6 +1,6 @@
 const now = String(Date.now())
 const htmlmin = require('html-minifier')
-
+const { DateTime } = require('luxon')
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget('./styles/tailwind.config.js')
@@ -24,6 +24,10 @@ module.exports = function (eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).setLocale('fr').toLocaleString(DateTime.DATE_MED);
   });
 
   eleventyConfig.addTransform('htmlmin', function (content, outputPath) {
