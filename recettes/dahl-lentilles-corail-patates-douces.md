@@ -1,6 +1,7 @@
 ---
 tags: recette
 title: Dahl de lentilles corail
+date: "git Created"
 layout: recette.njk
 image: /assets/recettes/dahl-lentilles-corail-patates-douces.jpg
 ingredients:

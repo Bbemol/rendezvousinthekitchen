@@ -11,7 +11,7 @@ layout: base.njk
     <div class="px-6">
       <h1 class="pr-12 mt-8 mb-2 leading-tight">{{title}}</h1>
       <div class="opacity-50 text-base mb-8 tracking-widest">
-        publié le {{page.date.toLocaleDateString()}}
+        publié le {{page.date | postDate}}
       </div>
       {% include "components/separator.njk" %}
       <div class="my-8 text-sm">

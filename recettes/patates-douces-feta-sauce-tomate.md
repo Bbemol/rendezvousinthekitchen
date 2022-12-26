@@ -1,6 +1,7 @@
 ---
 tags: recette
 title: Patates douces rôties, sauce tomate et feta
+date: "git Created"
 layout: recette.njk
 image: /assets/recettes/patates-douces-roties.jpeg
 ingredients:
