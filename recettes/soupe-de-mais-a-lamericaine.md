@@ -1,7 +1,7 @@
 ---
 tags: recette
 title: Soupe de maïs à l'américaine
-date: Created
+date: 2022-12-26
 layout: recette.njk
 image: /assets/recettes/southwestern-corn-chowder.webp
 ingredients:

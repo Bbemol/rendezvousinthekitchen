@@ -1,7 +1,7 @@
 ---
 tags: recette
 title: Tarte fine au potiron et chèvre miel
-date: Created
+date: 2022-03-13
 layout: recette.njk
 image: /assets/recettes/tarte-fine-potiron-chevre-miel.jpeg
 ingredients:

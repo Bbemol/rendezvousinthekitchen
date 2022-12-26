@@ -1,7 +1,7 @@
 ---
 tags: recette
 title: Dahl de lentilles corail
-date: Created
+date: 2022-03-28
 layout: recette.njk
 image: /assets/recettes/dahl-lentilles-corail-patates-douces.jpg
 ingredients:

@@ -1,7 +1,7 @@
 ---
 tags: recette
 title: Patates douces rôties, sauce tomate et feta
-date: Created
+date: 2022-03-25
 layout: recette.njk
 image: /assets/recettes/patates-douces-roties.jpeg
 ingredients:
