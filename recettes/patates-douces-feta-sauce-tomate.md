@@ -11,7 +11,7 @@ ingredients:
   - 200g de feta
   - "Épices : sel, cumin, persil, herbes de Provence, graine de coriandre (optionnel)"
 description:
-  - Cette recette est tirée de la recette de Papilles et Pupilles. La première que je l’ai cuisiné, je n’y croyais pas du tout. J’avais peur que ce soit trop sucré et finalement ce fût une vraie découverte. Les patates douces sont fondantes, la féta apporte le sel nécessaire et les tomates, tellement miam :P ! J’espère que vous l’aimerez aussi ! Bon appétit :)
+  - Cette recette est tirée de la recette de Papilles et Pupilles. La première que j’ai cuisiné, je n’y croyais pas du tout. J’avais peur que ce soit trop sucré et finalement ce fût une vraie découverte. Les patates douces sont fondantes, la féta apporte le sel nécessaire et les tomates, tellement miam :P ! J’espère que vous l’aimerez aussi ! Bon appétit :)
 related_links:
   - /recettes/tarte-fine-potiron-feta-miel/
 ---
