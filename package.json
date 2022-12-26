@@ -4,14 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "eleventy --serve & npx tailwindcss -i styles/tailwind.css -c ./tailwind.config.js -o _site/style.css --watch",
-    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c ./tailwind.config.js -o _site/style.css --minify"
+    "start": "npx @11ty/eleventy --serve & npx tailwindcss -i styles/tailwind.css -c ./tailwind.config.js -o _site/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true npx @11ty/eleventy & NODE_ENV=production npx tailwindcss -i styles/tailwind.css -c ./tailwind.config.js -o _site/style.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^10.4.2",
     "html-minifier": "^4.0.0",
     "postcss": "^8.4.7",

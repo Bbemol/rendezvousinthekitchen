@@ -1,7 +1,7 @@
 ---
 tags: recette
 title: Soupe de maïs à l'américaine
-date: "git Created"
+date: Created
 layout: recette.njk
 image: /assets/recettes/southwestern-corn-chowder.webp
 ingredients:
