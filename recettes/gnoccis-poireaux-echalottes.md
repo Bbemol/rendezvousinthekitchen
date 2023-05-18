@@ -14,6 +14,7 @@ ingredients:
 description:
   - Pour cette recette, je me suis inspiré des oeufs braisés poireaux épinards de Ottolenghi dans son livre Simple. Le mélange citron confit, cumin et poireaux est absolument succulent ! Je l'ai adapté à mon besoin. Au début, je voulais ajouter des petits pois, finalement j'ai complètement oublié !
 related_links:
+---
 
 1. Faire sauter les gnoccis à fru vif avec de l'huile d'olive et un peu de beurre. Une fois dorés, réserver.
 2. Baisser le feu, remettre un peu de beurre dans la poêle et ajouter les poireaux coupés en petits tronçons ainsi que l'échalote
